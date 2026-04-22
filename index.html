@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> POLYSHOP </title>
+  <style>
+	  body{
+		  font-family: sans-serif;
+		  margin: 0;
+		  padding: 0;
+		  background-color:#F5F3FF;
+		  color:#1F2937;
+		  min-height: 100vh;
+		  display: flex    ;
+          flex-direction: column;
+	  }
+	  header {
+		  background-color:#DDD6FE;
+		  color:#1F2937;
+		  padding: 10px;
+		  text-align: center;
+		  border: 5px solid #E5E7EB;
+		  margin-bottom: 0px;}
+	  header h1 {
+		  margin-bottom: 0
+	  }
+	  header p {
+		  margin-top: 0
+	  }
+    .search-box {
+		display: flex;
+		width: 100%;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+   .search-box input {
+	   flex: 1;padding: 10px;
+	   border: 1px solid #E5E7EB;
+	   border-radius: 8px 0 0 8px;
+   }
+   .search-box button {
+	   padding: 10px 15px;
+	   border: none;
+	   background: #7C3AED;
+	   color: white;
+       border-radius: 0 8px 8px 0;
+   }
+	  nav {
+              background-color:#C4B5FD;
+              padding: 5px;
+    		    	display:flex;
+	    		    border-bottom: 2px solid #E5E7EB;
+		         	width: 100%;
+			      	justify-content: center;
+				      gap: 50px
+	            }
+	  nav a {
+                color: #1F2937;
+                text-decoration: none;
+                font-weight: bold;
+                padding: 5px 20px;
+                margin: 0 10px;
+                display: inline-block;
+              }
+	  nav a:hover {
+                     background-color: #5B21B6;
+						         color:#FFFFFF;
+					        	 }
+      .container {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  gap: 20px;
+                  padding: 20px;
+	              }
+	    
+		button {
+            background-color: #7C3AED;
+			     	color: #FFFFFF;
+			      }
+	  button:hover {background-color: #5B21B6}
+        footer {
+                background-color:#DDD6FE;
+		          	color: #1F2937;
+    			      text-align: center;
+	    		      border-top : 5px solid #E5E7EB;
+                bottom: 0;
+	    	       }
+	  .dropdown {
+		  position: relative;
+	  }
+	  .dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #DDD6FE;
+		  min-width: 150px;
+		  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+		  border-radius: 8px;
+		  overflow: hidden;
+	  }
+	  .dropdown-content a {
+		  display: block;
+		  padding: 10px;
+		  text-align: left;
+	  }
+	  .dropdown-content a:hover {
+		  background-color: #7C3AED;
+		  color: white;
+	  }
+	  .dropdown:hover 
+	  .dropdown-content {
+		  display: block;
+	  }
+	  .active {
+		  background-color: #5B21B6;
+		  color: white !important;
+		  border-radius: 5px;
+	  }
+	  .banner {
+		  position: relative;
+		  width: 100%;
+	  }
+	  .banner img {
+		  width: 100%;
+		  height: 200px;
+		  object-fit: cover;
+	  }
+	  .banner-text {
+		  position: absolute;
+		  top: 30%;
+		  left: 10%;
+		  color: white;
+	  }
+	  .banner button {
+		  background: #7C3AED;
+		  border: none;
+		  padding: 10px 15px;
+		  color: white;
+	  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1> POLYSHOP </h1>
+    <p> Trang thương mại điện tử chính hãng </p>
+  </header>
+  
+  <div class="search-box">
+    <input type="text" placeholder="Tìm sản phẩm...">
+    <button>🔍</button>
+  </div>
+
+  <nav>
+	  <a href = "#"> Trang chủ </a>
+	  <div class="dropdown">
+		  <a href = "#"> Danh mục </a>
+		  <div class="dropdown-content">
+			  <a href="quanao.html" class="active">Quần áo</a>
+			  <a href="trangdiem.html" class="active">Đồ trang điểm</a>
+			  <a href="tuixach.html" class="active">Túi xách</a>
+			  <a href="phukien.html" class="active">Phụ kiện</a>
+		  </div>
+	  </div>
+	  <a href = "#"> Sự kiện </a>
+	  <a href = "#"> Giỏ hàng </a>
+  </nav>
+
+  <div class="banner">
+	  <img src="bg.jpg" alt="banner">
+	  <div class="banner-text">
+		  <h2>Bộ sưu tập mới</h2>
+		  <p>Giảm đến 50%</p>
+		  <button>Mua ngay</button>
+	  </div>
+  </div>
+  <main style="flex: 1;">
+    <div class="container">
+		
+	</div>
+  </main>
+  <footer>
+        <p>© 2008 Trang web Thương mại điện tử chính hãng.</p>
+        <p>Liên hệ: poly@2008.vn | Theo dõi chúng tôi tại Facebook</p>
+  </footer>
+</body>
+</html>
